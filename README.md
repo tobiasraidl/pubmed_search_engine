@@ -5,7 +5,3 @@ Preprocessing & Data Loading
 2. neural NLP representation learning approach		Kathrin, Alex L., Saban
 3. neural re-ranking model				Tobias, Alex G.
 Evaluation
-
-Check requirements of the task, like if pre-trained models are allowed.
-Understand the dataset
-word embeddings already available (word2vec)
