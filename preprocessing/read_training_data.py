@@ -3,12 +3,14 @@ import requests
 
 API_URL = "http://bioasq.org:8000/"
 
+# Retrieve the session key from the API
 def get_session_key() -> str:
     response = requests.get(f"{API_URL}pubmed/")
     session_key = response.text.split("/")[-1]
     return session_key
 
-def retrieve_documents_from_api(query: str, page = 0, articles_per_page = 10) -> list:
+# Retrieve documents from API of a given query
+def retrieve_documents_from_api(query: str, session_key: str, page = 0, articles_per_page = 10) -> list:
     payload = {
         "findPubMedCitations": [query, page, articles_per_page]
     }
@@ -32,13 +34,6 @@ def retrieve_documents_from_api(query: str, page = 0, articles_per_page = 10) ->
 
 
 # Setup training data questions
-with open("../data/training13b.json", "r") as f:
+with open("data/training13b.json", "r") as f:
     data = json.load(f)
-quesitons = {q["id"]: {"query": q["body"], "relevant_documents": q["documents"]} for q in data["questions"]}
- 
- # Setup API
-session_key = get_session_key()
-api_responses = {}
-
-documents = retrieve_documents_from_api("nitric oxide synthase")
-print(documents)
+questions = {q["id"]: {"query": q["body"], "relevant_documents": q["documents"]} for q in data["questions"]}
