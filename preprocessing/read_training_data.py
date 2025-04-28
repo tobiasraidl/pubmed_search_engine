@@ -1,33 +1,44 @@
 import json
 import requests
 
-
-with open("../data/training13b.json", "r") as f:
-    data = json.load(f)
-
-quesitons = {q["id"]: {"query": q["body"], "relevant_documents": q["documents"]} for q in data["questions"]}
-
-
-
-API_URL = "http://bioasq.org:8000/pubmed"
+API_URL = "http://bioasq.org:8000/"
 
 def get_session_key() -> str:
-    print(requests.get(API_URL))
-    
-session_key = get_session_key()
+    response = requests.get(f"{API_URL}pubmed/")
+    session_key = response.text.split("/")[-1]
+    return session_key
 
+def retrieve_documents_from_api(query: str, page = 0, articles_per_page = 10) -> list:
+    payload = {
+        "findPubMedCitations": [query, page, articles_per_page]
+    }
+    json_string = json.dumps(payload)
+
+    response = requests.post(
+        url=f"{API_URL}/{session_key}", 
+        data = {"json": json_string}
+    )
+    documents = []
+    for document in response.json()['result']['documents']:
+        if not all(k in document for k in ("pmid", "title", "documentAbstract")):
+            continue
+        
+        documents.append({
+            "id": document["pmid"],
+            "title": document["title"],
+            "abstract": document["documentAbstract"],
+        })   
+    return documents
+
+
+# Setup training data questions
+with open("../data/training13b.json", "r") as f:
+    data = json.load(f)
+quesitons = {q["id"]: {"query": q["body"], "relevant_documents": q["documents"]} for q in data["questions"]}
+ 
+ # Setup API
+session_key = get_session_key()
 api_responses = {}
 
-for id, value in quesitons.items():
-    query = value["query"]
-    relevant_documents = value["relevant_documents"]
-    
-    
-    request = {
-        "keywords": value,
-        "page": "0",
-        "articlesPerPage": "50"
-    }
-
-    response = requests.post(f"{API_URL}?{session_key}", request)
-    api_responses[id] = response.text
+documents = retrieve_documents_from_api("nitric oxide synthase")
+print(documents)
