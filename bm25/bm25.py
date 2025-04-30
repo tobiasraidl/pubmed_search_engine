@@ -3,6 +3,7 @@ import nltk
 from nltk.tokenize import word_tokenize
 import numpy as np
 import json
+from tqdm import tqdm
 
 class BM25_retriever():
     def __init__(self, tokenized_documents_path, documents_path):
@@ -35,13 +36,54 @@ class BM25_retriever():
             
         with open(out_path, "w") as f:
             json.dump(questions, f)
+            
+    def evaluate(self, questions_path):
+        """This function requires the questions pathto include the relevant labeled documents under the key "documents" """
+        with open(questions_path, "r") as f:
+            questions = json.load(f)
+            
+        precisions, recalls, f1s = [], [], []
         
+        for question in tqdm(questions["questions"], desc="Evaluating"):
+            relevant = question["documents"]
+            query = question["body"]
+            predicted = self.query(query)
+            
+            precision = self._precision(relevant, predicted)
+            recall = self._recall(relevant, predicted)
+            f1 = self._f1_score(precision, recall)
+            
+            precisions.append(precision)
+            recalls.append(recall)
+            f1s.append(f1)
+
+        macro_precision = sum(precisions) / len(precisions)
+        macro_recall = sum(recalls) / len(recalls)
+        macro_f1 = sum(f1s) / len(f1s)
+        print(f"Macro Precision: {macro_precision:.4f}")
+        print(f"Macro Recall: {macro_recall:.4f}")
+        print(f"Macro F1: {macro_f1:.4f}")
+            
+    @staticmethod
+    def _precision(relevant, predicted):
+        if not predicted:
+            return 0.0
+        return len(set(relevant) & set(predicted)) / len(predicted)
+    
+    @staticmethod
+    def _recall(relevant, predicted):
+        if not relevant:
+            return 0.0
+        return len(set(relevant) & set(predicted)) / len(relevant)
+
+    @staticmethod
+    def _f1_score(precision, recall):
+        if precision + recall == 0:
+            return 0.0
+        return 2 * precision * recall / (precision + recall)
 
     
 if __name__ == "__main__":
-    retriever = BM25_retriever("../data/train/tokenized_documents.json", "../data/train/documents.json")
-    # results = retriever.query("Is Hirschsprung disease a mendelian or a multifactorial disorder?")
-    # for url in results:
-    #     print(url)
-    
-    retriever.run_all_queries("../data/test/questions.json", "../data/out/results.json")
+    retriever = BM25_retriever(tokenized_documents_path="data/train/tokenized_documents.json", documents_path="data/train/documents.json")
+    # retriever.run_all_queries(questions_path="data/test/questions.json", out_path="data/out/results.json")
+    retriever.evaluate(questions_path="data/train/training12b.json")

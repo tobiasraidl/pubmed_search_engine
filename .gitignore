@@ -172,3 +172,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+data/train/tokenized_documents.json
+data/out/*
+!data/out/.gitkeep
