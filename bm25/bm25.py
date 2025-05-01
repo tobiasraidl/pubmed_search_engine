@@ -1,5 +1,4 @@
 from rank_bm25 import BM25Okapi
-import nltk
 from nltk.tokenize import word_tokenize
 import numpy as np
 import json
@@ -23,14 +22,18 @@ class BM25_retriever():
         doc_urls = [doc['url'] for doc in self.documents]
         tokenized_query = word_tokenize(query.lower())
         scores = self.model.get_scores(tokenized_query)
-        top_n_indices = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:top_n]
+        # top_n_indices = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:top_n]
+        top_n_indices = np.argpartition(scores, -top_n)[-top_n:]
+        top_n_indices = top_n_indices[np.argsort(scores[top_n_indices])[::-1]]
+
         return [doc_urls[i] for i in top_n_indices]
     
     def run_all_queries(self, questions_path, out_path, top_n=10):
         with open(questions_path, "r") as f:
             questions = json.load(f)
+            questions["questions"] = [{"body":q["body"], "documents":q["documents"]} for q in questions["questions"]]
         
-        for i, question in enumerate(questions["questions"]):
+        for i, question in tqdm(enumerate(questions["questions"]), desc="Querying"):
             query = question["body"]
             questions["questions"][i]["documents"] = self.query(query, top_n)
             
@@ -85,5 +88,5 @@ class BM25_retriever():
     
 if __name__ == "__main__":
     retriever = BM25_retriever(tokenized_documents_path="data/train/tokenized_documents.json", documents_path="data/train/documents.json")
-    # retriever.run_all_queries(questions_path="data/test/questions.json", out_path="data/out/results.json")
-    retriever.evaluate(questions_path="data/train/training12b.json")
+    retriever.run_all_queries(questions_path="data/train/training13b.json", out_path="bm25/out/prediction13b.json")
+    # retriever.evaluate(questions_path="data/train/training13b.json")
