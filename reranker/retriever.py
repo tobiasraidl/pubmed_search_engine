@@ -16,7 +16,7 @@ def preprocess_text(text):
 
 class BM25Retriever:
     def __init__(self, documents_path):
-        with open(documents_path, "r") as f:
+        with open(documents_path, "r", encoding="utf-8") as f:
             documents = json.load(f)
         self.corpus = [{"url": doc['url'], "text": f"{doc['title']} {doc['abstract']}"} for doc in documents]
         self.tokenized_corpus = [preprocess_text(doc['text']) for doc in self.corpus]
@@ -27,7 +27,7 @@ class BM25Retriever:
         results = self.bm25.get_top_n(tokenized_query, self.corpus, n=n)
         return [{"url":doc["url"], "text": doc["text"]} for doc in results]
     
-    def retrieve_all(self, queries, n=10):
+    def batch_retrieve(self, queries, n=10):
         """
         Retrieves documents for a list of queries.
 
@@ -44,20 +44,6 @@ class BM25Retriever:
             query_documents = [doc["url"] for doc in query_documents]
             result.append({"body": query, "documents": query_documents})
         return result
-    
-    def retrieve_all_as_json(self, queries, n=10):
-        """
-        Retrieves documents for a list of queries and returns them as a JSON string.
-
-        Args:
-            queries (list): List of queries to retrieve documents for.
-            n (int): Number of documents returned for each query.
-
-        Returns:
-            (str): A JSON string containing the queries and their corresponding top n documents.
-        """
-        result = self.retrieve_all(queries, n=n)
-        return json.dumps(result, indent=4)
     
 class Reranker:
     """

@@ -49,7 +49,7 @@ def evaluate_bm25(gt_file, k=10):
     relevant_documents = [question["documents"] for question in questions]
     
     retriever = BM25Retriever("data/train/documents.json")
-    results = retriever.retrieve_all(queries, n=k)
+    results = retriever.batch_retrieve(queries, n=k)
     predicted_documents = [result["documents"] for result in results]
     
     return compute_metrics(predicted_documents, relevant_documents, k=k)
@@ -68,12 +68,13 @@ def evaluate_reranker(gt_file, model="cross-encoder/ms-marco-MiniLM-L-6-v2", k=1
     return compute_metrics(predicted_documents, relevant_documents, k=k)
 
 def export_bm25_predictions(questions_file, out_path, k=10):
-    with open(gt_file, "r", encoding="utf-8") as f:
+    with open(questions_file, "r", encoding="utf-8") as f:
         gt_data = json.load(f)
     questions = gt_data["questions"]
     queries = [question["body"] for question in questions]
-    retriever = BM25Retriever(questions_file)
-    # batch_predicted_documents = retriever.batch_retrieve(queries, n=k, preranker_n=preranker_n)
+    retriever = BM25Retriever("data/train/documents.json")
+    batch_predicted_documents = retriever.batch_retrieve(queries, n=k)
+    batch_predicted_documents = [question["documents"] for question in batch_predicted_documents]
     assert len(batch_predicted_documents) == len(questions), "Number of predicted documents must match number of questions"
     
     json_data = {"questions": []}
@@ -111,3 +112,4 @@ if __name__ == "__main__":
     
     questions_file = "data/test/test_batch4.json"
     export_reranker_predictions(questions_file, "reranker/out/predictions/finetuned_reranker_prerank100.json", model="reranker/out/models/model_1", k=10, preranker_n=100)
+    export_bm25_predictions(questions_file, "reranker/out/predictions/bm25_pred.json", k=10) 
