@@ -88,5 +88,5 @@ class BM25_retriever():
     
 if __name__ == "__main__":
     retriever = BM25_retriever(tokenized_documents_path="data/train/tokenized_documents.json", documents_path="data/train/documents.json")
-    retriever.run_all_queries(questions_path="data/train/training13b.json", out_path="bm25/out/prediction13b.json")
+    retriever.run_all_queries(questions_path="data/train/training13b.json", out_path="bm25/out/prediction_test13.json")
     # retriever.evaluate(questions_path="data/train/training13b.json")
