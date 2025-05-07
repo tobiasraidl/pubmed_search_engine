@@ -44,7 +44,7 @@ def compute_metrics(predicted, ground_truth, k=10):
 def evaluate_bm25(gt_file, k=10):
     with open(gt_file, "r") as f:
         gt_data = json.load(f)
-    questions = gt_data["questions"][:1000]
+    questions = gt_data["questions"]
     queries = [question["body"] for question in questions]
     relevant_documents = [question["documents"] for question in questions]
     
@@ -58,22 +58,56 @@ def evaluate_bm25(gt_file, k=10):
 def evaluate_reranker(gt_file, model="cross-encoder/ms-marco-MiniLM-L-6-v2", k=10, preranker_n=100):
     with open(gt_file, "r") as f:
         gt_data = json.load(f)
-    questions = gt_data["questions"][:1000]
+    questions = gt_data["questions"]
     queries = [question["body"] for question in questions]
     relevant_documents = [question["documents"] for question in questions]
     
-    retriever = Reranker("reranker/out/model_1")
-    predicted_documents = retriever.batch_retrieve(queries, n=k, preranker_n=100)
+    retriever = Reranker(model)
+    predicted_documents = retriever.batch_retrieve(queries, n=k, preranker_n=preranker_n)
     
     return compute_metrics(predicted_documents, relevant_documents, k=k)
+
+def export_bm25_predictions(questions_file, out_path, k=10):
+    with open(gt_file, "r", encoding="utf-8") as f:
+        gt_data = json.load(f)
+    questions = gt_data["questions"]
+    queries = [question["body"] for question in questions]
+    retriever = BM25Retriever(questions_file)
+    # batch_predicted_documents = retriever.batch_retrieve(queries, n=k, preranker_n=preranker_n)
+    assert len(batch_predicted_documents) == len(questions), "Number of predicted documents must match number of questions"
     
+    json_data = {"questions": []}
+    for question, predicted_documents in zip(questions, batch_predicted_documents):
+        json_data["questions"].append({"id": question["id"], "body": question["body"], "documents": predicted_documents})
+    
+    with open(out_path, "w") as f:
+        json.dump(json_data, f, indent=2)
+
+def export_reranker_predictions(questions_file, out_path, model="cross-encoder/ms-marco-MiniLM-L-6-v2", k=10, preranker_n=100):
+    with open(questions_file, "r", encoding="utf-8") as f:
+        gt_data = json.load(f)
+    questions = gt_data["questions"]
+    queries = [question["body"] for question in questions]
+    retriever = Reranker(model)
+    batch_predicted_documents = retriever.batch_retrieve(queries, n=k, preranker_n=preranker_n)
+    assert len(batch_predicted_documents) == len(questions), "Number of predicted documents must match number of questions"
+    
+    json_data = {"questions": []}
+    for question, predicted_documents in zip(questions, batch_predicted_documents):
+        json_data["questions"].append({"id": question["id"], "body": question["body"], "documents": predicted_documents})
+    
+    with open(out_path, "w") as f:
+        json.dump(json_data, f, indent=2)
 
 if __name__ == "__main__":
     # gt_file = "data/test/BioASQ-task13bPhaseB-testset3.json"
-    gt_file = "data/train/training13b.json"
+    # gt_file = "data/train/training13b.json"
     
-    bm25_results = evaluate_bm25(gt_file)
-    print(bm25_results)
+    # bm25_results = evaluate_bm25(gt_file)
+    # print(bm25_results)
     
-    finetuned_reranker_results = evaluate_reranker(gt_file, "reranker/out/model_1", k=10, preranker_n=100)
-    print(finetuned_reranker_results)
+    # finetuned_reranker_results = evaluate_reranker(gt_file, "reranker/out/models/", k=10, preranker_n=100)
+    # print(finetuned_reranker_results)
+    
+    questions_file = "data/test/test_batch4.json"
+    export_reranker_predictions(questions_file, "reranker/out/predictions/finetuned_reranker_prerank100.json", model="reranker/out/models/model_1", k=10, preranker_n=100)

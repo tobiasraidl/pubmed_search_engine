@@ -45,6 +45,20 @@ class BM25Retriever:
             result.append({"body": query, "documents": query_documents})
         return result
     
+    def retrieve_all_as_json(self, queries, n=10):
+        """
+        Retrieves documents for a list of queries and returns them as a JSON string.
+
+        Args:
+            queries (list): List of queries to retrieve documents for.
+            n (int): Number of documents returned for each query.
+
+        Returns:
+            (str): A JSON string containing the queries and their corresponding top n documents.
+        """
+        result = self.retrieve_all(queries, n=n)
+        return json.dumps(result, indent=4)
+    
 class Reranker:
     """
     A class to rerank documents using a CrossEncoder model.
@@ -76,7 +90,7 @@ class Reranker:
     
     def batch_retrieve(self, queries, n=10, preranker_n=100):
         """
-        Retrieves documents for a list of queries.
+        Retrieves a list of documents for each query. (list)
 
         Args:
             queries (list): List of queries to retrieve documents for.
@@ -101,9 +115,16 @@ if __name__ == "__main__":
     [print(doc["url"]) for doc in bm25_results]
     
     # BM25 + reranker example
-    reranker = Reranker("reranker/out/model_1")
+    reranker = Reranker("reranker/out/models/model_1")
     reranked_docs = reranker.retrieve("Is Hirschsprung disease a mendelian or a multifactorial disorder?", n=10, preranker_n=1000)
     print("\nRe-ranked Documents (URLs with Scores):")
     for url, score in reranked_docs:
         print(f"URL: {url} | Score: {score}")
+    
+    # # BM25 + reranker example
+    # reranker = Reranker("reranker/out/models/model_1")
+    # reranked_docs = reranker.retrieve("Is Hirschsprung disease a mendelian or a multifactorial disorder?", n=10, preranker_n=1000)
+    # print("\nRe-ranked Documents (URLs with Scores):")
+    # for url, score in reranked_docs:
+    #     print(f"URL: {url} | Score: {score}")
     

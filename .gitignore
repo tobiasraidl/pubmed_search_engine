@@ -178,5 +178,5 @@ data/train/tokenized_documents.json
 data/out/*
 !data/out/.gitkeep
 
-reranker/out/*
-!reranker/out/.gitkeep
+reranker/out/models/*
+!reranker/out/models/.gitkeep

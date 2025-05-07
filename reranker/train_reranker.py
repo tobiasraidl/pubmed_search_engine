@@ -26,6 +26,6 @@ model.fit(
     train_dataloader=train_dataloader,
     epochs=1,
     warmup_steps=100,
-    output_path="reranker/out/model_1"
+    output_path="reranker/out/models/model_1"
 )
-model.save("reranker/out/model_1")
+model.save("reranker/out/models/model_1")
