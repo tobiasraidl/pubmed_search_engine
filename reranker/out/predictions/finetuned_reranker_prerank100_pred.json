@@ -1,0 +1,1364 @@
+{
+  "questions": [
+    {
+      "id": "67e6cf2618b1e36f2e0000d0",
+      "body": "Should Zotiraciclib be used for glioblastoma?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/2852827",
+        "http://www.ncbi.nlm.nih.gov/pubmed/2028149",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21983866",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22718138",
+        "http://www.ncbi.nlm.nih.gov/pubmed/2319291",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30151703",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24457079",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26692525",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20428822",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18581057"
+      ]
+    },
+    {
+      "id": "680d5e47353a4a2e6b000005",
+      "body": "Is bronchiectasis a chronic or acute condition?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/313731",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17725169",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16940490",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22966723",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19529061",
+        "http://www.ncbi.nlm.nih.gov/pubmed/6984375",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34556108",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15025618",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25973284",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24730627"
+      ]
+    },
+    {
+      "id": "680f4a68353a4a2e6b000007",
+      "body": "Do biopharmaceuticals have a role in the treatment of depression?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/23969030",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21154150",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26316760",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22963932",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24519190",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22909203",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25260373",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25418918",
+        "http://www.ncbi.nlm.nih.gov/pubmed/2127684",
+        "http://www.ncbi.nlm.nih.gov/pubmed/9875761"
+      ]
+    },
+    {
+      "id": "680a083218b1e36f2e00014d",
+      "body": "Are microglia involved in synaptic pruning during development?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/32594542",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23229789",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24269728",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32253104",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23747724",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28987163",
+        "http://www.ncbi.nlm.nih.gov/pubmed/36515320",
+        "http://www.ncbi.nlm.nih.gov/pubmed/33352233",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17526017",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22284190"
+      ]
+    },
+    {
+      "id": "67e5557c18b1e36f2e0000ac",
+      "body": "What is the target of fezolinetant?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/37462862",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37343519",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37808928",
+        "http://www.ncbi.nlm.nih.gov/pubmed/31415087",
+        "http://www.ncbi.nlm.nih.gov/pubmed/36734148",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32102086",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37974591",
+        "http://www.ncbi.nlm.nih.gov/pubmed/38016166",
+        "http://www.ncbi.nlm.nih.gov/pubmed/33724119",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34048742"
+      ]
+    },
+    {
+      "id": "6810fef8353a4a2e6b000016",
+      "body": "What complication of pregnancy was treated with  Diethylstilbestrol",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/33343698",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22272853",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21455009",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19490036",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29587878",
+        "http://www.ncbi.nlm.nih.gov/pubmed/35967591",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24333430",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26298776",
+        "http://www.ncbi.nlm.nih.gov/pubmed/7202738",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27634625"
+      ]
+    },
+    {
+      "id": "6810cb23353a4a2e6b000012",
+      "body": "Biopharmaceuticals for pediatric bronchiolitis.",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/28813765",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26508190",
+        "http://www.ncbi.nlm.nih.gov/pubmed/33274532",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22753001",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34347881",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29764494",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34237031",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32252836",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25453586",
+        "http://www.ncbi.nlm.nih.gov/pubmed/36093819"
+      ]
+    },
+    {
+      "id": "680bc7a718b1e36f2e000156",
+      "body": "What is the cancer-immunity cycle?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/12542976",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30700046",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15537647",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23403278",
+        "http://www.ncbi.nlm.nih.gov/pubmed/8652807",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24727425",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23255952",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26110128",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25744732",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20599755"
+      ]
+    },
+    {
+      "id": "67e56f2018b1e36f2e0000b0",
+      "body": "What is the mechanism of action of Iptacopan?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/19020475",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27088018",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28990423",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24246570",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20888031",
+        "http://www.ncbi.nlm.nih.gov/pubmed/10481836",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18025810",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19740383",
+        "http://www.ncbi.nlm.nih.gov/pubmed/8254024",
+        "http://www.ncbi.nlm.nih.gov/pubmed/31790683"
+      ]
+    },
+    {
+      "id": "67fe5f0918b1e36f2e000144",
+      "body": "What is the previous acronym for Metabolic Dysfunction-Associated Steatotic Liver Diasease  (MASLD)?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/37889055",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29247356",
+        "http://www.ncbi.nlm.nih.gov/pubmed/31110049",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37562970",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24320038",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30576769",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26956847",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15717219",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25612864",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34807779"
+      ]
+    },
+    {
+      "id": "67fbe4d718b1e36f2e00011d",
+      "body": "What is the genetic basis of addiction?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/18451130",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24942635",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37386628",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16775366",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21253885",
+        "http://www.ncbi.nlm.nih.gov/pubmed/2999612",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30871534",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21974937",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23637683",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29255950"
+      ]
+    },
+    {
+      "id": "680a079718b1e36f2e000147",
+      "body": "Do natural killer (NK) cells require antigen presentation to eliminate cancer cells?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/24941379",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29642292",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29163501",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30009514",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16203971",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27872101",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34535671",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21895989",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23372568",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27467937"
+      ]
+    },
+    {
+      "id": "67e5749b18b1e36f2e0000b5",
+      "body": "What are the targets of blinatumomab?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/33168588",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25484055",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29447988",
+        "http://www.ncbi.nlm.nih.gov/pubmed/31446134",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27195659",
+        "http://www.ncbi.nlm.nih.gov/pubmed/35182296",
+        "http://www.ncbi.nlm.nih.gov/pubmed/33085860",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25255963",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20981248",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15000529"
+      ]
+    },
+    {
+      "id": "680d5f2a353a4a2e6b000006",
+      "body": "What is the relationship between bronchiectasis and Erdosteine?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/313731",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17725169",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16940490",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34556108",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21716749",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25493340",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22966723",
+        "http://www.ncbi.nlm.nih.gov/pubmed/14551758",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32897034",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24019622"
+      ]
+    },
+    {
+      "id": "6810f6f0353a4a2e6b000015",
+      "body": "Can GLP-1 receptor agonists be used for obesity in children under 10 years of age?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/34431633",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26587691",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34626443",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22675341",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26694823",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37086147",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26308095",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32730231",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27042424",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27421117"
+      ]
+    },
+    {
+      "id": "680a237618b1e36f2e000152",
+      "body": "Are radiomic features useful in predicting survival in glioblastoma patients?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/6328061",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23095807",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25398844",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25201633",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21983866",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20870254",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23055947",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26976976",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26420896",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32938807"
+      ]
+    },
+    {
+      "id": "68110110353a4a2e6b000018",
+      "body": "In patients with acute liver failure associated with  paracetamol overdose does  N\u2010acetylcysteine treatment improve survival?.",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/34261138",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22332138",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29540258",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26122767",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25885260",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27545139",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34318916",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22409860",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29454747",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37141553"
+      ]
+    },
+    {
+      "id": "680f4c63353a4a2e6b00000d",
+      "body": "What is the pharmacological treatment of urinary schistosomiasis?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/8115806",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25808831",
+        "http://www.ncbi.nlm.nih.gov/pubmed/2511623",
+        "http://www.ncbi.nlm.nih.gov/pubmed/2644915",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22950063",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24315007",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21176430",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16179750",
+        "http://www.ncbi.nlm.nih.gov/pubmed/2515622",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22470757"
+      ]
+    },
+    {
+      "id": "680a087218b1e36f2e00014f",
+      "body": "What types of features are typically extracted in radiomics?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/17453169",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22855961",
+        "http://www.ncbi.nlm.nih.gov/pubmed/8850036",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16155441",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22455468",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22499686",
+        "http://www.ncbi.nlm.nih.gov/pubmed/7591257",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16775364",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32083401",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37018159"
+      ]
+    },
+    {
+      "id": "6810daad353a4a2e6b000013",
+      "body": "What diseases are treated with fecal transplants?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/26616138",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28506071",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26204547",
+        "http://www.ncbi.nlm.nih.gov/pubmed/31668184",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25384685",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25548572",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23844515",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28125667",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19584824",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27648772"
+      ]
+    },
+    {
+      "id": "6810c27b353a4a2e6b000010",
+      "body": "Can sertraline be used in children under 10?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/22934167",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22735246",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15076016",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15052512",
+        "http://www.ncbi.nlm.nih.gov/pubmed/33045114",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23124387",
+        "http://www.ncbi.nlm.nih.gov/pubmed/9381720",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20175591",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18318945",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37843837"
+      ]
+    },
+    {
+      "id": "680a07a418b1e36f2e000148",
+      "body": "Which cells are the primary antigen-presenting cells?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/16221071",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17848162",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37069321",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24325394",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27734415",
+        "http://www.ncbi.nlm.nih.gov/pubmed/33193306",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22374445",
+        "http://www.ncbi.nlm.nih.gov/pubmed/14727085",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22916248",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27005559"
+      ]
+    },
+    {
+      "id": "67fbd58c18b1e36f2e00010e",
+      "body": "Do misfolded and aggregated proteins build up in neurodegenerative illnesses, which causes neuronal dysfunction and ultimately neuronal death?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/19444607",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29974096",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26297259",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27293325",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27477512",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24270002",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20703094",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28751258",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26572762",
+        "http://www.ncbi.nlm.nih.gov/pubmed/14502650"
+      ]
+    },
+    {
+      "id": "67fbe10618b1e36f2e000111",
+      "body": "Differential traits of autism spectrum disorders in girls.",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/19214283",
+        "http://www.ncbi.nlm.nih.gov/pubmed/35785421",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22958973",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28283809",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24065914",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22735897",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23666287",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27974283",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22850932",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22492990"
+      ]
+    },
+    {
+      "id": "680fcb72353a4a2e6b00000e",
+      "body": "What are the major classes of immunoglobulins?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/8918594",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19900967",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16305737",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23105285",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27742734",
+        "http://www.ncbi.nlm.nih.gov/pubmed/9367782",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30233361",
+        "http://www.ncbi.nlm.nih.gov/pubmed/12472184",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23861639",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23355128"
+      ]
+    },
+    {
+      "id": "6805568118b1e36f2e000145",
+      "body": "Please list the DORA type drugs",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/35298826",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24488306",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23282091",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24215799",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28387957",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21989257",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24942635",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26123252",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27390287",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18840004"
+      ]
+    },
+    {
+      "id": "67e26b0b18b1e36f2e000073",
+      "body": "Is takotsubo cardiomyopathy more common in men?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/21769261",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21503250",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20091403",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19185360",
+        "http://www.ncbi.nlm.nih.gov/pubmed/31818146",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21949534",
+        "http://www.ncbi.nlm.nih.gov/pubmed/35198223",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25788945",
+        "http://www.ncbi.nlm.nih.gov/pubmed/31752657",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16387374"
+      ]
+    },
+    {
+      "id": "680a080b18b1e36f2e00014b",
+      "body": "What is radiomics?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/9270595",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29255950",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18635383",
+        "http://www.ncbi.nlm.nih.gov/pubmed/35225672",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32776600",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19731560",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34518444",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25994244",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17584678",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17113236"
+      ]
+    },
+    {
+      "id": "6810db0a353a4a2e6b000014",
+      "body": "What is the cause of Fibromyalgia?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/21176430",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24885975",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22760463",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29955927",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32336069",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19412502",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23975906",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24251273",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17653994",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37656420"
+      ]
+    },
+    {
+      "id": "67e2cfcf18b1e36f2e00009a",
+      "body": "Recommended prevention of osteoporosis in postmenopausal women.",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/21170699",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22023901",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26557374",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23203733",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20485909",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26504466",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20169039",
+        "http://www.ncbi.nlm.nih.gov/pubmed/10769110",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24126422",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28624872"
+      ]
+    },
+    {
+      "id": "680a081d18b1e36f2e00014c",
+      "body": "What are the functions of astrocytes in the CNS?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/25518365",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28285822",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15898103",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26067407",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24677511",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28987163",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15228586",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20698853",
+        "http://www.ncbi.nlm.nih.gov/pubmed/3756504",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17676593"
+      ]
+    },
+    {
+      "id": "6810ff8f353a4a2e6b000017",
+      "body": "Is Laparoscopic salpingectomy used to treat testicular cancer?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/26793497",
+        "http://www.ncbi.nlm.nih.gov/pubmed/36130805",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23623693",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16739060",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27426650",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16437936",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19879716",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18382872",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17962299",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27638274"
+      ]
+    },
+    {
+      "id": "67fbe21818b1e36f2e000113",
+      "body": "Factors that are associated with thyroid cancer.",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/30265861",
+        "http://www.ncbi.nlm.nih.gov/pubmed/12203792",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26176686",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25553081",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30226440",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23435040",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37360768",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18055323",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22560341",
+        "http://www.ncbi.nlm.nih.gov/pubmed/9764818"
+      ]
+    },
+    {
+      "id": "67fc20ee18b1e36f2e00012a",
+      "body": "Do glioblastoma tumors have a high degree of lymphocyte infiltration?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/35920986",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37108208",
+        "http://www.ncbi.nlm.nih.gov/pubmed/2319291",
+        "http://www.ncbi.nlm.nih.gov/pubmed/2544511",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27002148",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19107440",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28361164",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25398844",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32998960",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16960645"
+      ]
+    },
+    {
+      "id": "67f8527318b1e36f2e000104",
+      "body": "Please list the types of Videolaryngoscopy for adults undergoing tracheal intubation",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/19281832",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18975117",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29161297",
+        "http://www.ncbi.nlm.nih.gov/pubmed/14977793",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32472305",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23470070",
+        "http://www.ncbi.nlm.nih.gov/pubmed/36260598",
+        "http://www.ncbi.nlm.nih.gov/pubmed/36367000",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22537497",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25010615"
+      ]
+    },
+    {
+      "id": "680f4ae9353a4a2e6b000009",
+      "body": "Is Electroconvulsive Therapy used for any type of epilepsy?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/25710834",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25678887",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22890709",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24093580",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37770691",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34183143",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25012388",
+        "http://www.ncbi.nlm.nih.gov/pubmed/36682756",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37353676",
+        "http://www.ncbi.nlm.nih.gov/pubmed/14704462"
+      ]
+    },
+    {
+      "id": "67fd922518b1e36f2e000143",
+      "body": "What are the characteristics of the M1/M2 macrophage polarization paradigm in the tumor microenvironment?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/29730267",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32942567",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28341752",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37218976",
+        "http://www.ncbi.nlm.nih.gov/pubmed/31990904",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29245934",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27245147",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32708142",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34847253",
+        "http://www.ncbi.nlm.nih.gov/pubmed/35228161"
+      ]
+    },
+    {
+      "id": "67fc1a3818b1e36f2e000129",
+      "body": "What is Nissen fundoplication",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/25012804",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27901639",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30341655",
+        "http://www.ncbi.nlm.nih.gov/pubmed/9270595",
+        "http://www.ncbi.nlm.nih.gov/pubmed/31644405",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29255950",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25264655",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23237251",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32776600",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21338284"
+      ]
+    },
+    {
+      "id": "67e285b018b1e36f2e00007b",
+      "body": "What are the genetic variants in Turner syndrome?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/697225",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19909521",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20197675",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22711287",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34605948",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24980541",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15797949",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20017317",
+        "http://www.ncbi.nlm.nih.gov/pubmed/11807897",
+        "http://www.ncbi.nlm.nih.gov/pubmed/10689047"
+      ]
+    },
+    {
+      "id": "680a07f918b1e36f2e00014a",
+      "body": "What organelle is responsible for ATP production?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/34975548",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21945179",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18539900",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22832224",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18005397",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22580100",
+        "http://www.ncbi.nlm.nih.gov/pubmed/10416608",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19158349",
+        "http://www.ncbi.nlm.nih.gov/pubmed/11726516",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25007779"
+      ]
+    },
+    {
+      "id": "67cdc78381b102733300001a",
+      "body": "What age group is commonly affected by biliary atresia?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/10973238",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29893894",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23942271",
+        "http://www.ncbi.nlm.nih.gov/pubmed/10465109",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24131573",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18835624",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20687499",
+        "http://www.ncbi.nlm.nih.gov/pubmed/9951451",
+        "http://www.ncbi.nlm.nih.gov/pubmed/9934984",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25365855"
+      ]
+    },
+    {
+      "id": "67d7ff2c18b1e36f2e000049",
+      "body": "Manifestations of gluten allergy/intolerance.",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/23767452",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21159258",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15981987",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20036949",
+        "http://www.ncbi.nlm.nih.gov/pubmed/12485471",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23496382",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21438963",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27130174",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23567359",
+        "http://www.ncbi.nlm.nih.gov/pubmed/11247893"
+      ]
+    },
+    {
+      "id": "680a084018b1e36f2e00014e",
+      "body": "Do T cells enter the CNS in healthy individuals?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/25267439",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17368474",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19543397",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27377536",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30385269",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29686426",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20430734",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24995608",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22814427",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24062490"
+      ]
+    },
+    {
+      "id": "67cde41a81b102733300001d",
+      "body": "Is urolithiasis the same thing as kidney stones?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/22857835",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23535174",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24315007",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23546565",
+        "http://www.ncbi.nlm.nih.gov/pubmed/33789010",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23821183",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32005658",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20856225",
+        "http://www.ncbi.nlm.nih.gov/pubmed/7587886",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19762051"
+      ]
+    },
+    {
+      "id": "67e2b80618b1e36f2e00008f",
+      "body": "How do you acquire Legionella pneumophila?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/24126522",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18447956",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25377471",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17299139",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24269728",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20635392",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27742734",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21057511",
+        "http://www.ncbi.nlm.nih.gov/pubmed/35182296",
+        "http://www.ncbi.nlm.nih.gov/pubmed/33539032"
+      ]
+    },
+    {
+      "id": "680a21ff18b1e36f2e000151",
+      "body": "What is the role of the choroid plexus in immune surveillance?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/3601096",
+        "http://www.ncbi.nlm.nih.gov/pubmed/2249207",
+        "http://www.ncbi.nlm.nih.gov/pubmed/11294981",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27713030",
+        "http://www.ncbi.nlm.nih.gov/pubmed/11018246",
+        "http://www.ncbi.nlm.nih.gov/pubmed/33300275",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16630058",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30917623",
+        "http://www.ncbi.nlm.nih.gov/pubmed/35769466",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20641567"
+      ]
+    },
+    {
+      "id": "67fc546c18b1e36f2e000130",
+      "body": "Has Antibiotic use induced hiccups?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/27713358",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24014018",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28833404",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22108462",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34768022",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19694903",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24392752",
+        "http://www.ncbi.nlm.nih.gov/pubmed/31955984",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23405883",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37380142"
+      ]
+    },
+    {
+      "id": "680f4aa6353a4a2e6b000008",
+      "body": "What do snake antivenoms contain?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/2514275",
+        "http://www.ncbi.nlm.nih.gov/pubmed/33563823",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25347845",
+        "http://www.ncbi.nlm.nih.gov/pubmed/4664580",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22563080",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17710455",
+        "http://www.ncbi.nlm.nih.gov/pubmed/7526378",
+        "http://www.ncbi.nlm.nih.gov/pubmed/14526187",
+        "http://www.ncbi.nlm.nih.gov/pubmed/14989147",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16702234"
+      ]
+    },
+    {
+      "id": "680a078618b1e36f2e000146",
+      "body": "Are microglia derived from the same lineage as peripheral macrophages?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/32594542",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23747724",
+        "http://www.ncbi.nlm.nih.gov/pubmed/11731238",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32253104",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28111277",
+        "http://www.ncbi.nlm.nih.gov/pubmed/36515320",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23816851",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23229789",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28987163",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29204746"
+      ]
+    },
+    {
+      "id": "67e098cb18b1e36f2e00006d",
+      "body": "How does a gastric pacemaker work?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/23144237",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32256703",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15289832",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22472323",
+        "http://www.ncbi.nlm.nih.gov/pubmed/14742272",
+        "http://www.ncbi.nlm.nih.gov/pubmed/36641984",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21633823",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32308105",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24616567",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24881494"
+      ]
+    },
+    {
+      "id": "67d6be8a18b1e36f2e000022",
+      "body": "Can newborns have glaucoma?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/23429543",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23821193",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26547205",
+        "http://www.ncbi.nlm.nih.gov/pubmed/9864698",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20132346",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24837143",
+        "http://www.ncbi.nlm.nih.gov/pubmed/36282969",
+        "http://www.ncbi.nlm.nih.gov/pubmed/31853915",
+        "http://www.ncbi.nlm.nih.gov/pubmed/631693",
+        "http://www.ncbi.nlm.nih.gov/pubmed/8981698"
+      ]
+    },
+    {
+      "id": "680bc74618b1e36f2e000155",
+      "body": "What are some recent advances in cancer immunotherapy?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/27454404",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25496336",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30914573",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30893148",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16549043",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27532023",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29517083",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27430520",
+        "http://www.ncbi.nlm.nih.gov/pubmed/33537496",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24477411"
+      ]
+    },
+    {
+      "id": "67f857eb18b1e36f2e000105",
+      "body": "Is delirium a frequent complication after cardiac surgery?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/25337310",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16732742",
+        "http://www.ncbi.nlm.nih.gov/pubmed/10701282",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18282269",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24928237",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16351715",
+        "http://www.ncbi.nlm.nih.gov/pubmed/35530854",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27477871",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20609799",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19711147"
+      ]
+    },
+    {
+      "id": "67e291a718b1e36f2e000081",
+      "body": "Phobias affecting humans.",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/37866329",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34735735",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19196845",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27327781",
+        "http://www.ncbi.nlm.nih.gov/pubmed/33260536",
+        "http://www.ncbi.nlm.nih.gov/pubmed/33139537",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22354957",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15195716",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27541626",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18673215"
+      ]
+    },
+    {
+      "id": "680b7f4818b1e36f2e000154",
+      "body": "How can convolutional neural networks (CNNs) be utilized in radiomics?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/31874597",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27197224",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29846502",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34423469",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30247488",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29428356",
+        "http://www.ncbi.nlm.nih.gov/pubmed/35533969",
+        "http://www.ncbi.nlm.nih.gov/pubmed/36002964",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30092116",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18956012"
+      ]
+    },
+    {
+      "id": "67cde43c81b102733300001e",
+      "body": "Please summarize Graves disease",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/32059832",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22136271",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27346786",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24878056",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16006304",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18305142",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28467880",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24170099",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21956421",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23448365"
+      ]
+    },
+    {
+      "id": "67e2958018b1e36f2e000084",
+      "body": "Are there any studies on the genetics of suicide?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/24399358",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16305737",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23597030",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19996040",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24138046",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26149466",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28723978",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37367977",
+        "http://www.ncbi.nlm.nih.gov/pubmed/10613047",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17430139"
+      ]
+    },
+    {
+      "id": "680c174d353a4a2e6b000001",
+      "body": "What are some common post-translational modifications of proteins?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/34645583",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18948196",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15744326",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24970140",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26598646",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23576281",
+        "http://www.ncbi.nlm.nih.gov/pubmed/11125090",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16730216",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23034525",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22122749"
+      ]
+    },
+    {
+      "id": "67e0053118b1e36f2e000067",
+      "body": "Do MiOXSYS and OxiSperm measure ROS(Reactive Oxygen Species) in sperm?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/21769097",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24795696",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22886605",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18463161",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27051644",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22834967",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24037962",
+        "http://www.ncbi.nlm.nih.gov/pubmed/12213925",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20698853",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22387281"
+      ]
+    },
+    {
+      "id": "67e2a8d618b1e36f2e000088",
+      "body": "Which parasitic infections can cause anemia?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/12602722",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17186470",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30050644",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24808249",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16893403",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28682026",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25975649",
+        "http://www.ncbi.nlm.nih.gov/pubmed/35887511",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23326533",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25635706"
+      ]
+    },
+    {
+      "id": "680a07ed18b1e36f2e000149",
+      "body": "What neurotransmitter is most associated with muscle activation?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/27512149",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37823335",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22516624",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17700359",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22797053",
+        "http://www.ncbi.nlm.nih.gov/pubmed/33678513",
+        "http://www.ncbi.nlm.nih.gov/pubmed/11562442",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23975906",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15520282",
+        "http://www.ncbi.nlm.nih.gov/pubmed/9291508"
+      ]
+    },
+    {
+      "id": "67e93f2d18b1e36f2e0000db",
+      "body": "What medical proceedure causes nephrogenic systemic fibrosis?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/21184655",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25224542",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29608575",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30576769",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29121645",
+        "http://www.ncbi.nlm.nih.gov/pubmed/31575509",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28664834",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37718721",
+        "http://www.ncbi.nlm.nih.gov/pubmed/36050717",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29160304"
+      ]
+    },
+    {
+      "id": "67e2bde318b1e36f2e000093",
+      "body": "Is obesity a risk factor for sleep apnea?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/22520295",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23963470",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23666861",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17324369",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19275628",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17515549",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23914326",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24320038",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27914359",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28040290"
+      ]
+    },
+    {
+      "id": "680c137818b1e36f2e000158",
+      "body": "What cancer hallmarks are characteristically promoted by tumor microenvironment components, such as pericytes?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/21376230",
+        "http://www.ncbi.nlm.nih.gov/pubmed/35022204",
+        "http://www.ncbi.nlm.nih.gov/pubmed/31873723",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28560055",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29995496",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32942567",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23509776",
+        "http://www.ncbi.nlm.nih.gov/pubmed/31119147",
+        "http://www.ncbi.nlm.nih.gov/pubmed/36797245",
+        "http://www.ncbi.nlm.nih.gov/pubmed/36968288"
+      ]
+    },
+    {
+      "id": "67ca061181b102733300000a",
+      "body": "XIST proteins mediate what cellular process?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/30171939",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32535328",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27492478",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23093590",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30539545",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21626138",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25747039",
+        "http://www.ncbi.nlm.nih.gov/pubmed/11780141",
+        "http://www.ncbi.nlm.nih.gov/pubmed/9099757",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26282267"
+      ]
+    },
+    {
+      "id": "67e26d6218b1e36f2e000074",
+      "body": "Typical age range of onset of systemic scleroderma.",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/1437923",
+        "http://www.ncbi.nlm.nih.gov/pubmed/11316039",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17375009",
+        "http://www.ncbi.nlm.nih.gov/pubmed/9553847",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15302727",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16735000",
+        "http://www.ncbi.nlm.nih.gov/pubmed/12134683",
+        "http://www.ncbi.nlm.nih.gov/pubmed/8985734",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24442578",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23934402"
+      ]
+    },
+    {
+      "id": "680a21eb18b1e36f2e000150",
+      "body": "What glial cells are responsible for myelination in the CNS?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/27638763",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27377536",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19349584",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21343408",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28987163",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29548059",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25206366",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22302795",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15753437",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23086523"
+      ]
+    },
+    {
+      "id": "67fa3c5818b1e36f2e000109",
+      "body": "What is BIONDA",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/29255950",
+        "http://www.ncbi.nlm.nih.gov/pubmed/9270595",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34518444",
+        "http://www.ncbi.nlm.nih.gov/pubmed/35225672",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32776600",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25994244",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19731560",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21338284",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37962198",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17584678"
+      ]
+    },
+    {
+      "id": "6810c54b353a4a2e6b000011",
+      "body": "Indications for Electro-convulsive therapy.",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/34613603",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27603326",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23700188",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26095540",
+        "http://www.ncbi.nlm.nih.gov/pubmed/9773664",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34357110",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29435915",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21073206",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20160034",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32762583"
+      ]
+    },
+    {
+      "id": "67fd5d6518b1e36f2e000138",
+      "body": "What is a common chromosome-level gain in glioblastoma?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/8651304",
+        "http://www.ncbi.nlm.nih.gov/pubmed/7687872",
+        "http://www.ncbi.nlm.nih.gov/pubmed/2544511",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26534766",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24457079",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28960585",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22736234",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23055947",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18974105",
+        "http://www.ncbi.nlm.nih.gov/pubmed/33053208"
+      ]
+    },
+    {
+      "id": "67fb046e18b1e36f2e00010c",
+      "body": "What is the gene target for  Zanidatamab?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/36000541",
+        "http://www.ncbi.nlm.nih.gov/pubmed/36102999",
+        "http://www.ncbi.nlm.nih.gov/pubmed/36400106",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34626563",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28991104",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17804822",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20861184",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28039207",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16697960",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20561671"
+      ]
+    },
+    {
+      "id": "67d6bbfa18b1e36f2e000020",
+      "body": "How do you diagnose HIV infection?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/22908365",
+        "http://www.ncbi.nlm.nih.gov/pubmed/11595590",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26936099",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22272853",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28273857",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27272704",
+        "http://www.ncbi.nlm.nih.gov/pubmed/14693562",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18685551",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28710996",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28846743"
+      ]
+    },
+    {
+      "id": "680fe1e3353a4a2e6b00000f",
+      "body": "Is a single-nucleotide polymorphism (SNP) the same as a mutation?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/29536439",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15347815",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20574445",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27899579",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23055800",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15962389",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21586520",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23986774",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16585166",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21396113"
+      ]
+    },
+    {
+      "id": "680d5dd8353a4a2e6b000004",
+      "body": "Is Melatonin found in human milk?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/37352416",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27940404",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23477202",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25534555",
+        "http://www.ncbi.nlm.nih.gov/pubmed/33563823",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32995804",
+        "http://www.ncbi.nlm.nih.gov/pubmed/12973153",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24676595",
+        "http://www.ncbi.nlm.nih.gov/pubmed/12111545",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30915128"
+      ]
+    },
+    {
+      "id": "67d7208218b1e36f2e00002e",
+      "body": "Physiopathology of alopecia.",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/16268889",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26137574",
+        "http://www.ncbi.nlm.nih.gov/pubmed/14708109",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23588149",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24326560",
+        "http://www.ncbi.nlm.nih.gov/pubmed/36968986",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19689518",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25129481",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29574468",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23463948"
+      ]
+    },
+    {
+      "id": "67fc381f18b1e36f2e00012f",
+      "body": "What is phenotype switching in melanoma?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/32753671",
+        "http://www.ncbi.nlm.nih.gov/pubmed/33438577",
+        "http://www.ncbi.nlm.nih.gov/pubmed/36040798",
+        "http://www.ncbi.nlm.nih.gov/pubmed/37788736",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28991225",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18829533",
+        "http://www.ncbi.nlm.nih.gov/pubmed/31050693",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29181082",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18316599",
+        "http://www.ncbi.nlm.nih.gov/pubmed/36199496"
+      ]
+    },
+    {
+      "id": "67c9e46881b1027333000004",
+      "body": "What is a neoantigen?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/34788790",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29255950",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27412572",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25994244",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15921641",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32776600",
+        "http://www.ncbi.nlm.nih.gov/pubmed/35225672",
+        "http://www.ncbi.nlm.nih.gov/pubmed/17420471",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34518444",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29209918"
+      ]
+    },
+    {
+      "id": "67fbe2ab18b1e36f2e000116",
+      "body": "Do hyaluronic acid injections improve knee pain?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/29214616",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26684635",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20942668",
+        "http://www.ncbi.nlm.nih.gov/pubmed/33114764",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23053191",
+        "http://www.ncbi.nlm.nih.gov/pubmed/31883703",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23707270",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22004765",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32506848",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23852695"
+      ]
+    },
+    {
+      "id": "67eaf14c18b1e36f2e0000de",
+      "body": "Which transcription factors are important to define human astrocyte identity?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/25936917",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23431145",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15228586",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34162892",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24857652",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25263550",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26277449",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30414142",
+        "http://www.ncbi.nlm.nih.gov/pubmed/21589869",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15645142"
+      ]
+    },
+    {
+      "id": "67c9e7ee81b1027333000007",
+      "body": "Is Peto's Paradox associated with cancer rates?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/27642012",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22409860",
+        "http://www.ncbi.nlm.nih.gov/pubmed/31600666",
+        "http://www.ncbi.nlm.nih.gov/pubmed/6823106",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23284963",
+        "http://www.ncbi.nlm.nih.gov/pubmed/16901476",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18361802",
+        "http://www.ncbi.nlm.nih.gov/pubmed/22621694",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24365315",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24035502"
+      ]
+    },
+    {
+      "id": "67d71d8f18b1e36f2e00002b",
+      "body": "Is Clostridioides difficile an aerobe or a anaerobe bacterium?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/25700419",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23844515",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27905086",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28366569",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29760164",
+        "http://www.ncbi.nlm.nih.gov/pubmed/35789381",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28274145",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25451052",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18430081",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26341328"
+      ]
+    },
+    {
+      "id": "67cdb26a81b1027333000017",
+      "body": "Please list the benefits of sodium-glucose cotransporter 2 inhibitors",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/25688893",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25941565",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24025022",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23042029",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27928503",
+        "http://www.ncbi.nlm.nih.gov/pubmed/23807940",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28811850",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28634592",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30938372",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25255411"
+      ]
+    },
+    {
+      "id": "67e2b0a018b1e36f2e00008b",
+      "body": "Bacteria that most commonly causes urinary tract infection.",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/15487636",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24772739",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20495471",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34322352",
+        "http://www.ncbi.nlm.nih.gov/pubmed/25808831",
+        "http://www.ncbi.nlm.nih.gov/pubmed/30088449",
+        "http://www.ncbi.nlm.nih.gov/pubmed/8007629",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26246081",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27999162",
+        "http://www.ncbi.nlm.nih.gov/pubmed/19430887"
+      ]
+    },
+    {
+      "id": "67e090be18b1e36f2e00006c",
+      "body": "Is Bacillus Clausii a probiotic?",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/8264800",
+        "http://www.ncbi.nlm.nih.gov/pubmed/1482192",
+        "http://www.ncbi.nlm.nih.gov/pubmed/10361306",
+        "http://www.ncbi.nlm.nih.gov/pubmed/32365804",
+        "http://www.ncbi.nlm.nih.gov/pubmed/3892050",
+        "http://www.ncbi.nlm.nih.gov/pubmed/2334153",
+        "http://www.ncbi.nlm.nih.gov/pubmed/18663416",
+        "http://www.ncbi.nlm.nih.gov/pubmed/9106214",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20068396",
+        "http://www.ncbi.nlm.nih.gov/pubmed/9119194"
+      ]
+    },
+    {
+      "id": "67d7fded18b1e36f2e000042",
+      "body": "Symptoms of chlamydia genital infection in women.",
+      "documents": [
+        "http://www.ncbi.nlm.nih.gov/pubmed/29417387",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29464468",
+        "http://www.ncbi.nlm.nih.gov/pubmed/28057084",
+        "http://www.ncbi.nlm.nih.gov/pubmed/27081272",
+        "http://www.ncbi.nlm.nih.gov/pubmed/20644497",
+        "http://www.ncbi.nlm.nih.gov/pubmed/26900902",
+        "http://www.ncbi.nlm.nih.gov/pubmed/3826955",
+        "http://www.ncbi.nlm.nih.gov/pubmed/34379922",
+        "http://www.ncbi.nlm.nih.gov/pubmed/24051575",
+        "http://www.ncbi.nlm.nih.gov/pubmed/29284768"
+      ]
+    }
+  ]
+}

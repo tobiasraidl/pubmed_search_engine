@@ -9,10 +9,10 @@ class BM25_retriever():
         self.model, self.tokenized_documents, self.documents = self.build_retriever(tokenized_documents_path, documents_path)
 
     def build_retriever(self, tokenized_documents_path, documents_path):
-        with open(tokenized_documents_path, "r") as f:
+        with open(tokenized_documents_path, "r", encoding="utf-8") as f:
             tokenized_documents = json.load(f)
 
-        with open(documents_path, "r") as f:
+        with open(documents_path, "r", encoding="utf-8") as f:
             documents = json.load(f)
 
         bm25 = BM25Okapi(tokenized_documents)
@@ -29,20 +29,20 @@ class BM25_retriever():
         return [doc_urls[i] for i in top_n_indices]
     
     def run_all_queries(self, questions_path, out_path, top_n=10):
-        with open(questions_path, "r") as f:
+        with open(questions_path, "r", encoding="utf-8") as f:
             questions = json.load(f)
-            questions["questions"] = [{"body":q["body"], "documents":q["documents"]} for q in questions["questions"]]
+            questions["questions"] = [{"body": q["body"], "id": q["id"]} for q in questions["questions"]]
         
         for i, question in tqdm(enumerate(questions["questions"]), desc="Querying"):
             query = question["body"]
             questions["questions"][i]["documents"] = self.query(query, top_n)
             
-        with open(out_path, "w") as f:
+        with open(out_path, "w", encoding="utf-8") as f:
             json.dump(questions, f)
             
     def evaluate(self, questions_path):
         """This function requires the questions pathto include the relevant labeled documents under the key "documents" """
-        with open(questions_path, "r") as f:
+        with open(questions_path, "r", encoding="utf-8") as f:
             questions = json.load(f)
             
         precisions, recalls, f1s = [], [], []
@@ -88,5 +88,5 @@ class BM25_retriever():
     
 if __name__ == "__main__":
     retriever = BM25_retriever(tokenized_documents_path="data/train/tokenized_documents.json", documents_path="data/train/documents.json")
-    retriever.run_all_queries(questions_path="data/train/training13b.json", out_path="bm25/out/prediction_test13.json")
+    retriever.run_all_queries(questions_path="data/test/test_batch4.json", out_path="bm25/out/prediction_test13.json")
     # retriever.evaluate(questions_path="data/train/training13b.json")

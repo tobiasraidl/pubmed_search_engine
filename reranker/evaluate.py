@@ -42,7 +42,7 @@ def compute_metrics(predicted, ground_truth, k=10):
     
 
 def evaluate_bm25(gt_file, k=10):
-    with open(gt_file, "r") as f:
+    with open(gt_file, "r", encoding="utf-8") as f:
         gt_data = json.load(f)
     questions = gt_data["questions"]
     queries = [question["body"] for question in questions]
@@ -56,7 +56,7 @@ def evaluate_bm25(gt_file, k=10):
 
 
 def evaluate_reranker(gt_file, model="cross-encoder/ms-marco-MiniLM-L-6-v2", k=10, preranker_n=100):
-    with open(gt_file, "r") as f:
+    with open(gt_file, "r", encoding="utf-8") as f:
         gt_data = json.load(f)
     questions = gt_data["questions"]
     queries = [question["body"] for question in questions]
@@ -81,7 +81,7 @@ def export_bm25_predictions(questions_file, out_path, k=10):
     for question, predicted_documents in zip(questions, batch_predicted_documents):
         json_data["questions"].append({"id": question["id"], "body": question["body"], "documents": predicted_documents})
     
-    with open(out_path, "w") as f:
+    with open(out_path, "w", encoding="utf-8") as f:
         json.dump(json_data, f, indent=2)
 
 def export_reranker_predictions(questions_file, out_path, model="cross-encoder/ms-marco-MiniLM-L-6-v2", k=10, preranker_n=100):
@@ -97,7 +97,7 @@ def export_reranker_predictions(questions_file, out_path, model="cross-encoder/m
     for question, predicted_documents in zip(questions, batch_predicted_documents):
         json_data["questions"].append({"id": question["id"], "body": question["body"], "documents": predicted_documents})
     
-    with open(out_path, "w") as f:
+    with open(out_path, "w", encoding="utf-8") as f:
         json.dump(json_data, f, indent=2)
 
 if __name__ == "__main__":
@@ -111,5 +111,5 @@ if __name__ == "__main__":
     # print(finetuned_reranker_results)
     
     questions_file = "data/test/test_batch4.json"
-    export_reranker_predictions(questions_file, "reranker/out/predictions/finetuned_reranker_prerank100.json", model="reranker/out/models/model_1", k=10, preranker_n=100)
-    export_bm25_predictions(questions_file, "reranker/out/predictions/bm25_pred.json", k=10) 
+    export_reranker_predictions(questions_file, "reranker/out/predictions/pretrained_reranker_prerank100_pred.json", k=10, preranker_n=100)
+    # export_bm25_predictions(questions_file, "reranker/out/predictions/bm25_pred.json", k=10) 
