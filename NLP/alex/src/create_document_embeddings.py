@@ -32,7 +32,7 @@ if __name__ == "__main__":
     print("Embed title and abstract")
     document_embeddings = []
 
-    for i, document in enumerate(tqdm(data[:20], desc="Embedding documents")):
+    for i, document in enumerate(tqdm(data, desc="Embedding documents")):
         document_corpus = document["title"] + document["abstract"]
         document_embedding = model.transform_query(document_corpus)
         document_embeddings.append(
