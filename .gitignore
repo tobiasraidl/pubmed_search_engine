@@ -178,4 +178,5 @@ data/out/*
 !data/out/.gitkeep
 
 reranker/out/models/*
+reranker/out/triples.jsonl
 !reranker/out/models/.gitkeep

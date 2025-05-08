@@ -35,7 +35,7 @@ def gen_train_triples(negatives_per_positives=3):
                         "negative": f"{negative_doc['title']} {negative_doc['abstract']}"
                         })
     
-    with open("reranker/triples.jsonl", "w") as f:
+    with open("reranker/out/triples.jsonl", "w") as f:
         for item in triples:
             f.write(json.dumps(item) + "\n")
 
