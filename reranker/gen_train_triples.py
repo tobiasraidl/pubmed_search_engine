@@ -12,20 +12,28 @@ def gen_train_triples(negatives_per_positives=3):
         
     with open("data/train/documents.json", "r") as f:
         documents = json.load(f)
-        documents = [doc["url"] for doc in documents]
     
     triples = []
     for question in tqdm(questions, desc="Generating triples"):
-        positive_docs = question["documents"]
-        for positive_doc in positive_docs:
+        positive_docs_urls = question["documents"]
+        for positive_doc_url in positive_docs_urls:
             # get the negative samples
             negative_docs = random.sample(documents, negatives_per_positives)
-            # add the triple to the list
             for negative_doc in negative_docs:
                 # make sure the negative doc is not in the positive docs
-                if negative_doc not in positive_docs:
-                    # add the triple to the list
-                    triples.append({"query": question["body"], "positive": positive_doc, "negative": negative_doc})
+                if negative_doc["url"] not in positive_docs_urls:
+                    # get the list entry in documents where url is positive_doc_url and get the title and abstract of this entry
+                    positive_doc = next((doc for doc in documents if doc["url"] == positive_doc_url), None)
+                    # check wheter the document exists in the corpus if not skip this entry
+                    if positive_doc is None:
+                        print(f"Document with url {positive_doc_url} not found in corpus")
+                        continue
+                    
+                    triples.append({
+                        "query": question["body"], 
+                        "positive": f"{positive_doc['title']} {positive_doc['abstract']}", 
+                        "negative": f"{negative_doc['title']} {negative_doc['abstract']}"
+                        })
     
     with open("reranker/triples.jsonl", "w") as f:
         for item in triples:

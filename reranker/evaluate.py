@@ -101,15 +101,15 @@ def export_reranker_predictions(questions_file, out_path, model="cross-encoder/m
         json.dump(json_data, f, indent=2)
 
 if __name__ == "__main__":
-    # gt_file = "data/test/BioASQ-task13bPhaseB-testset3.json"
+    gt_file = "data/test/test_batch3_with_gt.json"
     # gt_file = "data/train/training13b.json"
     
-    # bm25_results = evaluate_bm25(gt_file)
-    # print(bm25_results)
+    bm25_results = evaluate_bm25(gt_file)
+    print(bm25_results)
     
-    # finetuned_reranker_results = evaluate_reranker(gt_file, "reranker/out/models/", k=10, preranker_n=100)
-    # print(finetuned_reranker_results)
+    finetuned_reranker_results = evaluate_reranker(gt_file, "reranker/out/models/model_1", k=10, preranker_n=100)
+    print(finetuned_reranker_results)
     
-    questions_file = "data/test/test_batch4.json"
-    export_reranker_predictions(questions_file, "reranker/out/predictions/pretrained_reranker_prerank100_pred.json", k=10, preranker_n=100)
+    # questions_file = "data/test/test_batch4.json"
+    # export_reranker_predictions(questions_file, "reranker/out/predictions/pretrained_reranker_prerank100_pred.json", k=10, preranker_n=100)
     # export_bm25_predictions(questions_file, "reranker/out/predictions/bm25_pred.json", k=10) 
