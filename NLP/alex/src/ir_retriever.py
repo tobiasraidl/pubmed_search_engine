@@ -24,7 +24,7 @@ class IRRertriever:
         """
         with open(path, "r") as file:
             document_embeddings = json.load(file)
-        return pd.DataFrame(document_embeddings)
+        return pd.DataFrame(document_embeddings).dropna()
 
     def cosine_similarity(self, query, vectors, n=10):
         """
