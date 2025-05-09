@@ -16,7 +16,7 @@ def load_pairs_from_triples(path):
     return samples
 
 # Load data
-train_samples = load_pairs_from_triples("reranker/triples.jsonl")
+train_samples = load_pairs_from_triples("reranker/out/triples.jsonl")
 train_dataloader = DataLoader(train_samples, shuffle=True, batch_size=16)
 
 # Load model (binary classification)
