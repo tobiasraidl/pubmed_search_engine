@@ -6,15 +6,14 @@ import os
 import re
 import numpy as np
 from gensim.models import KeyedVectors
-from tqdm import tqdm
 
 
-class EmbeddingModel:
+class BioASQEmbeddingModel:
     def __init__(self):
         self.path_to_words = "../data/types.txt"  # "/Users/alexanderlorenz/Downloads/word2vecTools/types.txt"
         self.path_to_vectors = "../data/vectors.txt"  # "/Users/alexanderlorenz/Downloads/word2vecTools/vectors.txt"
-        self.model_dir = "../model/"
-        self.model_path = "../model/bioasq_embedding_model.kv"
+        self.model_dir = "../out/models/"
+        self.model_path = "../out/models/bioasq_embedding_model.kv"
         self.kv = self._load_model(verbose=True, save=True)
 
     def _load_model(self, verbose=True, save=True):
@@ -69,7 +68,7 @@ class EmbeddingModel:
             ).split()
         )
 
-    def transform_query(self, query: str) -> np.array:
+    def encode(self, query: str) -> np.array:
         """
         Transforms query to 200-dimensional query embedding.
         """
@@ -84,7 +83,7 @@ class EmbeddingModel:
 if __name__ == "__main__":
     # load model
     print("Loading embedding model")
-    model = EmbeddingModel()
+    model = BioASQEmbeddingModel()
 
     # t = model.kv
     # print(t["catel"])

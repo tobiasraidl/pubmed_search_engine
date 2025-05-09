@@ -13,7 +13,8 @@ import re
 import os
 import numpy as np
 from tqdm import tqdm
-from embedding_model import EmbeddingModel
+from bioasq_embedding_model import BioASQEmbeddingModel
+from sentence_transformers import SentenceTransformer
 
 
 PATH_TO_DOCUMENTS = "../../../data/train/documents.json"
@@ -26,24 +27,30 @@ with open(PATH_TO_DOCUMENTS, "r") as file:
 if __name__ == "__main__":
     # load model
     print("Loading embedding model")
-    model = EmbeddingModel()
+    
+    models = {
+        "BioASQEmbeddingModel" : BioASQEmbeddingModel(),
+        "all-MiniLM-L6-v2" : SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+    }
 
     # embed title and abstract
     print("Embed title and abstract")
-    document_embeddings = []
+    
+    for model_name in models:
+        document_embeddings = []
+        model = models[model_name]
+        for i, document in enumerate(tqdm(data[:10], desc="Embedding documents")):
+            document_corpus = document["title"] + document["abstract"]
+            document_embedding = model.encode(document_corpus)
+            document_embeddings.append(
+                {
+                    "url": str(document["url"]),
+                    "document_embedding": document_embedding.tolist(),
+                }
+            )
 
-    for i, document in enumerate(tqdm(data, desc="Embedding documents")):
-        document_corpus = document["title"] + document["abstract"]
-        document_embedding = model.transform_query(document_corpus)
-        document_embeddings.append(
-            {
-                "url": str(document["url"]),
-                "document_embedding": document_embedding.tolist(),
-            }
-        )
-
-    # store document embeddings
-    print("Store embeddings to /data")
-    os.makedirs("../data/", exist_ok=True)
-    with open("../data/document_embeddings.json", "w") as f:
-        json.dump(document_embeddings, f)
+        # store document embeddings
+        print("Store embeddings to /data")
+        os.makedirs("../out/embeddings", exist_ok=True)
+        with open(f"../out/embeddings/document_embeddings_{model_name}.json", "w") as f:
+            json.dump(document_embeddings, f)
