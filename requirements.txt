@@ -1,0 +1,6 @@
+torch>=2.0
+sentence-transformers
+tqdm
+numpy
+pandas
+tf-keras
