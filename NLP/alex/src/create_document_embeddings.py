@@ -39,7 +39,7 @@ if __name__ == "__main__":
     for model_name in models:
         document_embeddings = []
         model = models[model_name]
-        for i, document in enumerate(tqdm(data[:10], desc="Embedding documents")):
+        for i, document in enumerate(tqdm(data, desc="Embedding documents")):
             document_corpus = document["title"] + document["abstract"]
             document_embedding = model.encode(document_corpus)
             document_embeddings.append(
