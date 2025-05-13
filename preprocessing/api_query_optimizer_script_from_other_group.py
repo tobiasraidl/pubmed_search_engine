@@ -18,8 +18,8 @@ RETMX   = 1000     # number of documents to fetch per question
 TOP_K   = 10       # number of documents to keep after BM25 re-ranking
 
 # Input/Output paths
-INPUT_FILE  = Path("/home/arjol/Documents/dev/SS25AIR_Group14/data/batch4.json")
-OUTPUT_FILE = Path("/home/arjol/Documents/dev/SS25AIR_Group14/data/batch4_out.json")
+INPUT_FILE  = Path("data/test/test_batch3_with_gt.json")
+OUTPUT_FILE = Path("data/out/test_batch3_out.json")
 
 # === PREPROCESSING TOOLS ===
 stop_words = set(stopwords.words('english'))
@@ -65,6 +65,7 @@ def main():
     data = json.loads(INPUT_FILE.read_text())['questions']
 
     output = []
+    all_docs = []  # ← Store all (pmid, text) pairs here for entire corpus
     cnt = 1
     for item in data:
         print(f"On step {cnt} out of {len(data)} PMIDs")
@@ -96,30 +97,15 @@ def main():
                 docs.append((pmid, f"{title} {abst}"))
         print(f"  Fetched {len(docs)} documents (title+abstract)")
 
-        # 3) BM25 ranking
-        corpus = [preprocess(text) for _, text in docs]
-        bm25   = BM25Okapi(corpus)
-        q_tokens = preprocess(body)
-        scores = bm25.get_scores(q_tokens)
-        ranked = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:TOP_K]
-        top_pmids = [docs[i][0] for i in ranked]
-        print(f"  Selected top {TOP_K} PMIDs after BM25 re-ranking")
-
-        # build urls
-        top_urls = [f"http://www.ncbi.nlm.nih.gov/pubmed/{pmid}" for pmid in top_pmids]
-
-        output.append({
-            'id': qid,
-            'type': qtype,
-            'body': body,
-            'documents': top_urls,
-            'snippets': []
-        })
+        all_docs.extend(docs)  # ← Add to global corpus
         cnt += 1
 
+    # Preprocess and save the entire corpus
+    corpus = [preprocess(text) for _, text in all_docs]
+    with open("data/train/corpus.json", "w") as f:
+        json.dump(corpus, f)
+    print("Saved full corpus to data/train/corpus.json")
 
-    OUTPUT_FILE.write_text(json.dumps({'questions': output}, indent=2))
-    print(f"Wrote output to {OUTPUT_FILE}")
 
 if __name__ == '__main__':
     main()
