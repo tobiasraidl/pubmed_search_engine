@@ -105,7 +105,7 @@ class FineTunedBertRetriever:
         top_indices = np.argsort(similarities)[-n:][::-1]
         return top_indices, similarities[top_indices]
 
-    def retrieve(self, query: str, n=10, return_df=False) -> pd.DataFrame:
+    def retrieve(self, query: str, n=10, return_df=False) -> dict:
         query_embedding = self.model.encode(query)
         document_embeddings = np.vstack(self.df_embeddings["document_embedding"].values)
 
@@ -132,7 +132,7 @@ class FineTunedBertRetriever:
             (list): A list of dicts, where each dict contains the query and the top n documents for this query.
         """
         results = []
-        for query in tqdm(queries, desc="Preprocessing queries", unit="queries"):
+        for query in tqdm(queries, desc="Retrieving documents for each query", unit="queries"):
             query_documents = self.retrieve(query, n=n)
             query_documents = [doc["url"] for doc in query_documents]
             results.append({"body": query, "documents": query_documents})

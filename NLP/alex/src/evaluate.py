@@ -40,14 +40,14 @@ def compute_metrics(predicted, ground_truth, k=10):
     }
 
 
-def evaluate_model_performance(gt_file, model_class, k=10):
+def evaluate_model_performance(gt_file, retriever, k=10):
     with open(gt_file, "r", encoding="utf-8") as f:
             gt_data = json.load(f)
     questions = gt_data["questions"]
     queries = [question["body"] for question in questions]
     relevant_documents = [question["documents"] for question in questions]
 
-    retriever = model_class()
+    #retriever = model_class()
     results = retriever.batch_retrieve(queries, n=k)
     predicted_documents = [result["documents"] for result in results]
 
@@ -59,11 +59,11 @@ if __name__ == "__main__":
     os.makedirs("../out/results/", exist_ok=True)
 
     # evaluate BioASQEmbeddingRetriever
-    results_bioasq = evaluate_model_performance(gt_file=gt_file, model_class=BioASQEmbeddingRetriever)
+    results_bioasq = evaluate_model_performance(gt_file=gt_file, retriever=BioASQEmbeddingRetriever())
     with open("../out/results/bioasq_result.json", "w", encoding="utf-8") as f:
         json.dump(results_bioasq, f, indent=4, ensure_ascii=False)
 
     # evaluate FineTunedBertRetriever
-    results_fine_tuned_model = evaluate_model_performance(gt_file=gt_file, model_class=FineTunedBertRetriever)
+    results_fine_tuned_model = evaluate_model_performance(gt_file=gt_file, retriever=FineTunedBertRetriever())
     with open("../out/results/fine_tuned_model_result.json", "w", encoding="utf-8") as f:
         json.dump(results_fine_tuned_model, f, indent=4, ensure_ascii=False)

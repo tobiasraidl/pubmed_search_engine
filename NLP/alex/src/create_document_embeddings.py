@@ -9,18 +9,16 @@ by averaging each dimension across all avaiable word vectors in the document.
 """
 
 import json
-import re
 import os
-import numpy as np
 from tqdm import tqdm
 from bioasq_embedding_model import BioASQEmbeddingModel
 from sentence_transformers import SentenceTransformer
 
 
-PATH_TO_DOCUMENTS = "../../../data/train/documents.json"
+PATH_TO_CORPUS = "../../../data/train/corpus.json"
 
 
-with open(PATH_TO_DOCUMENTS, "r") as file:
+with open(PATH_TO_CORPUS, "r") as file:
     data = json.load(file)
 
 
@@ -54,3 +52,5 @@ if __name__ == "__main__":
         os.makedirs("../out/embeddings", exist_ok=True)
         with open(f"../out/embeddings/document_embeddings_{model_name}.json", "w") as f:
             json.dump(document_embeddings, f)
+
+    print("Done")
