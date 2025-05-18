@@ -41,7 +41,7 @@ if __name__ == "__main__":
 
     # load data
     train_samples = load_pairs_from_triples("../../../reranker/out/triples.jsonl")
-    train_dataloader = DataLoader(train_samples[:10], shuffle=True, batch_size=32)
+    train_dataloader = DataLoader(train_samples[:50], shuffle=True, batch_size=32)
 
     for model_name in tqdm(models, desc="Fine-tuning models"):
         # init model
