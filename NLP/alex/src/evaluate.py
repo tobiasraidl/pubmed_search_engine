@@ -63,7 +63,18 @@ if __name__ == "__main__":
     with open("../out/results/bioasq_result.json", "w", encoding="utf-8") as f:
         json.dump(results_bioasq, f, indent=4, ensure_ascii=False)
 
-    # evaluate FineTunedBertRetriever
+    # evaluate base bert model
     results_fine_tuned_model = evaluate_model_performance(gt_file=gt_file, retriever=FineTunedBertRetriever())
+    with open("../out/results/base_bert_model_result.json", "w", encoding="utf-8") as f:
+        json.dump(results_fine_tuned_model, f, indent=4, ensure_ascii=False)
+
+    # evaluate FineTunedBertRetriever
+    fine_tuned_model_path = "../out/models/all-MiniLM-L6-v2-fine-tuned"
+    model_name = "all-MiniLM-L6-v2-fine-tuned"
+    results_fine_tuned_model = evaluate_model_performance(
+        gt_file=gt_file, 
+        retriever=FineTunedBertRetriever(model_path=fine_tuned_model_path, model_name=model_name))
     with open("../out/results/fine_tuned_model_result.json", "w", encoding="utf-8") as f:
         json.dump(results_fine_tuned_model, f, indent=4, ensure_ascii=False)
+
+    

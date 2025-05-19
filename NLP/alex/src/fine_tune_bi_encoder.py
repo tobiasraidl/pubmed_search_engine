@@ -6,10 +6,10 @@ to train the model to bring semantically similar texts closer in embedding space
 and dissimilar ones farther apart.
 """
 
-
+import logging
+import os
 import random
 import json 
-import os
 import torch
 from sentence_transformers import SentenceTransformer, losses, InputExample
 from torch.utils.data import DataLoader
@@ -17,6 +17,15 @@ from tqdm import tqdm
 
 
 random.seed(42)
+
+
+
+log_dir = '../out/logs'
+os.makedirs(log_dir, exist_ok=True)
+
+log_file = os.path.join(log_dir, 'fine-tuning.log')
+logging.basicConfig(filename=log_file, level=logging.INFO)
+
 
 
 def load_pairs_from_triples(path):
@@ -40,8 +49,8 @@ if __name__ == "__main__":
     }
 
     # load data
-    train_samples = load_pairs_from_triples("../../../reranker/out/triples.jsonl")
-    train_dataloader = DataLoader(train_samples[:50], shuffle=True, batch_size=32)
+    train_samples = load_pairs_from_triples("./triples.jsonl")
+    train_dataloader = DataLoader(train_samples, shuffle=True, batch_size=32) # [:int((len(train_samples)*0.1))]
 
     for model_name in tqdm(models, desc="Fine-tuning models"):
         # init model
@@ -53,13 +62,36 @@ if __name__ == "__main__":
         # define loss config
         train_loss = losses.TripletLoss(model=model, distance_metric=losses.TripletDistanceMetric.COSINE) # TripletDistanceMetric.COSINE, "cosine"
 
+        # training params
+        batch_size = 32
+        epochs = 5
+        warmup_steps = 100
+        model.tokenizer.model_max_length = 512
+        model.tokenizer.truncation_side = 'right'
+
         # fine-tune on triplets
+        logging.info("Start fine-tuning")
         model.fit(
             train_objectives=[(train_dataloader, train_loss)],
-            epochs=1,
-            warmup_steps=3
+            epochs=epochs,
+            warmup_steps=warmup_steps
         )
-
+        logging.info("Finished fine-tuning")
+        
         # save model
+        logging.info("Start storing")
         os.makedirs(model_dir, exist_ok=True)
         model.save(f"{model_dir}/{model_name}-fine-tuned")
+        logging.info("Stored. Done")
+
+        # save training params
+        training_params = {
+            "batch_size": 32,
+            "epochs": 5,
+            "warmup_steps": 100,
+            "max_length": model.tokenizer.model_max_length,
+            "truncation_side": model.tokenizer.truncation_side
+        }
+        os.makedirs("./fine-tuning-params/", exist_ok=True)
+        with open("./fine-tuning-params/fine-tuning-params.json", "w", encoding="utf-8") as f:
+            json.dump(training_params, f, indent=4, ensure_ascii=False)

@@ -25,10 +25,11 @@ with open(PATH_TO_CORPUS, "r") as file:
 if __name__ == "__main__":
     # load model
     print("Loading embedding model")
-    
+    fine_tuned_model_path = "../out/models/all-MiniLM-L6-v2-fine-tuned"
     models = {
         "BioASQEmbeddingModel" : BioASQEmbeddingModel(),
-        "all-MiniLM-L6-v2" : SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+        "all-MiniLM-L6-v2" : SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2"),
+        "all-MiniLM-L6-v2-fine-tuned" : SentenceTransformer(fine_tuned_model_path)
     }
 
     # embed title and abstract

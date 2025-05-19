@@ -75,7 +75,8 @@ class BioASQEmbeddingRetriever:
 
 class FineTunedBertRetriever:
     def __init__(self, model_path="sentence-transformers/all-MiniLM-L6-v2", model_name="all-MiniLM-L6-v2"):
-        self.model = SentenceTransformer(model_path, device="cuda" if torch.cuda.is_available() else "cpu")
+        device = "mps" if torch.backends.mps.is_available() else "cuda" if torch.cuda.is_available() else "cpu"
+        self.model = SentenceTransformer(model_path, device=device)
         self.document_embeddings_path = f"../out/embeddings/document_embeddings_{model_name}.json"
         self.df_embeddings = self._load_document_embeddings(
             path=self.document_embeddings_path

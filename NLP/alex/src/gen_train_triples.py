@@ -10,7 +10,7 @@ def gen_train_triples(negatives_per_positives=3):
     with open("../../../data/train/training13b_clean.json", "r") as f:
         questions = json.load(f)
         
-    with open("../../../data/train/corpus.json", "r") as f: # smaller corpus: "../../../data/train/documents.json"
+    with open("../../../data/train/documents.json", "r") as f:
         documents = json.load(f)
     
     triples = []
