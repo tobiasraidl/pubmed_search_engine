@@ -53,6 +53,19 @@ def evaluate_model_performance(gt_file, retriever, k=10):
 
     return compute_metrics(predicted_documents, relevant_documents, k=k)
 
+def evaluate_and_store_results(retrievers):
+    # path to labeled test data (ground truth)
+    gt_file = "../../../data/test/test_batch3_with_gt.json" #"data/test/test_batch3_with_gt.json"
+    os.makedirs("../out/results/", exist_ok=True)
+
+    #
+    for retriever_name in retrievers:
+        retriever = retrievers[retriever_name]
+
+        results_bioasq = evaluate_model_performance(gt_file=gt_file, retriever=retriever)
+        with open(f"../out/results/{retriever_name}_result.json", "w", encoding="utf-8") as f:
+            json.dump(results_bioasq, f, indent=4, ensure_ascii=False)
+
 if __name__ == "__main__":
     # path to labeled test data (ground truth)
     gt_file = "../../../data/test/test_batch3_with_gt.json" #"data/test/test_batch3_with_gt.json"

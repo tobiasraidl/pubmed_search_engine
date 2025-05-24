@@ -21,6 +21,30 @@ PATH_TO_CORPUS = "../../../data/train/corpus.json"
 with open(PATH_TO_CORPUS, "r") as file:
     data = json.load(file)
 
+def create_embeddings(models: dict):
+    for model_name in models:
+        if os.path.exists(f"../out/embeddings/document_embeddings_{model_name}.json"):
+            print("Embeddings already exist.")
+            continue
+
+        document_embeddings = []
+        model = models[model_name]
+        for i, document in enumerate(tqdm(data, desc=f"Embedding documents using {model_name}")):
+            document_corpus = document["title"] + document["abstract"]
+            document_embedding = model.encode(document_corpus)
+            document_embeddings.append(
+                {
+                    "url": str(document["url"]),
+                    "document_embedding": document_embedding.tolist(),
+                }
+            )
+
+        # store document embeddings
+        print("Store embeddings to /data")
+        os.makedirs("../out/embeddings", exist_ok=True)
+        with open(f"../out/embeddings/document_embeddings_{model_name}.json", "w") as f:
+            json.dump(document_embeddings, f)
+
 
 if __name__ == "__main__":
     # load model

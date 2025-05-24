@@ -5,11 +5,13 @@
 - Move types.txt and vectors.txt to data folder
 - The vector embeddings are stored separately (types.txt, vectors.txt), where the first word in types.txt corresponds to the first line in vectors.txt
 - Execute create_document_embeddings.py, which maps the embeddings from BioASQ embeddings to each word of the corpus of a document (title + abstract), and computes the document embedding, and stores them
-- Before running ir_retriever.py, maybe comment out some code in the main method
+- Run evaluate.py
 
-## Running FineTunedBertRetriever
+## Fining tuning a Bert model
 - run fine_tune_bi_encoder.py to load, fine-tune, and locally the store the Bert model
+- note: This is step has been done on jupyter cluster
 - Execute create_document_embeddings.py, to precompute embeddings of the documents using the fine-tuned Bert model
+- run evaluate
 
 # Todo:
-- Write script to evaluate BioASQEmbeddingModel and FineTunedBertRetriever model performance
+- Evaluate Performance of VectorModel, Bert model, fine-tune Bert model

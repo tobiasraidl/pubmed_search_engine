@@ -41,6 +41,51 @@ def load_pairs_from_triples(path):
     return samples
 
 
+def fine_tune(model, model_name, model_dir="../out/models", model_path=None) -> str:
+    # training params
+    batch_size = 32
+    epochs = 5
+    warmup_steps = 100
+    model.tokenizer.model_max_length = 512
+    model.tokenizer.truncation_side = 'right'
+    if model_path is None:
+        model_path = f"{model_dir}/{model_name}-fine-tuned-test"
+
+    # load data
+    train_samples = load_pairs_from_triples("../out/triples.jsonl")
+    train_dataloader = DataLoader(train_samples[:10], shuffle=True, batch_size=batch_size) # [:int((len(train_samples)*0.1))]
+    
+    print("CUDA available:", torch.cuda.is_available())
+    print("Using device:", model.device if hasattr(model, "device") else "unknown")
+
+    # define loss
+    train_loss = losses.TripletLoss(model=model, distance_metric=losses.TripletDistanceMetric.COSINE) # TripletDistanceMetric.COSINE, "cosine"
+
+    # fine-tune on triplets
+    logging.info("Start fine-tuning")
+    model.fit(
+        train_objectives=[(train_dataloader, train_loss)],
+        epochs=epochs,
+        warmup_steps=warmup_steps,
+        output_path=model_path
+    )
+    logging.info("Finished fine-tuning")
+
+    # save training params
+    training_params = {
+        "batch_size": 32,
+        "epochs": 5,
+        "warmup_steps": 100,
+        "max_length": model.tokenizer.model_max_length,
+        "truncation_side": model.tokenizer.truncation_side
+    }
+    os.makedirs("../out/fine-tuning-params", exist_ok=True)
+    with open("../out/fine-tuning-params/fine-tuning-params.json", "w", encoding="utf-8") as f:
+        json.dump(training_params, f, indent=4, ensure_ascii=False)
+
+    return model_path
+
+
 if __name__ == "__main__":
     # paths, model names
     model_dir = "../out/models"

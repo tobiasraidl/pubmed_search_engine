@@ -1,3 +1,7 @@
+NLP/alex/src/checkpoints
+NLP/alex/src/mlruns
+NLP/alex/out/models
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
