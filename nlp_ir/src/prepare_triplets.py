@@ -3,7 +3,7 @@ import json
 import random
 from tqdm import tqdm
 
-DOCS_PATH = "data/train/documents.json"
+DOCS_PATH = "data/train/corpus.json"
 QUESTIONS_PATH = "data/train/training13b_clean.json"
 OUTPUT_PATH = "nlp_ir/data/sbert_triplets.json"
 

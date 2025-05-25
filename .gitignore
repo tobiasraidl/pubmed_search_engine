@@ -177,7 +177,8 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-
+# data files
+data/train/corpus.json
 data/out/*
 !data/out/.gitkeep
 

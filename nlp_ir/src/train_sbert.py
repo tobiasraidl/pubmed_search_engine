@@ -27,7 +27,7 @@ def train():
 
     model.fit(
         train_objectives=[(dataloader, train_loss)],
-        epochs=1,
+        epochs=10,
         warmup_steps=100,
         output_path="nlp_ir/model/sbert-finetuned-bioasq"
     )

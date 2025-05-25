@@ -22,7 +22,7 @@ python nlp_ir/src/prepare_triplets.py
 ```
 Terminal output:
 ```
-Building triplets: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5389/5389 [00:15<00:00, 348.85it/s]
+Building triplets: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5389/5389 [00:22<00:00, 235.13it/s]
 ```
 
 ## 2. Train SBERT Model
@@ -31,8 +31,8 @@ python nlp_ir/src/train_sbert.py
 ```
 Terminal output:
 ```
-{'train_runtime': 296.1853, 'train_samples_per_second': 18.195, 'train_steps_per_second': 1.138, 'train_loss': 0.6457651743903005, 'epoch': 1.0}                                                  
-100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 337/337 [04:56<00:00,  1.14it/s]
+{'train_runtime': 93.7594, 'train_samples_per_second': 16.318, 'train_steps_per_second': 1.067, 'train_loss': 0.4174595260620117, 'epoch': 10.0}                                                  
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [01:33<00:00,  1.07it/s]
 ```
 ## 3. Build Document Embeddings
 ```bash
@@ -40,7 +40,7 @@ python nlp_ir/src/build_document_embeddings.py
 ```
 Terminal output:
 ```
-Batches: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1551/1551 [04:44<00:00,  5.45it/s]
+Batches: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2642/2642 [08:11<00:00,  5.37it/s]
 ```
 ## 4. Retrieve Documents
 ```bash
@@ -49,9 +49,9 @@ python nlp_ir/src/sbert_retriever.py
 Terminal output:
 ```
                                            url     score
-0  http://www.ncbi.nlm.nih.gov/pubmed/23001136  0.954175
-1  http://www.ncbi.nlm.nih.gov/pubmed/12239580  0.931006
-2  http://www.ncbi.nlm.nih.gov/pubmed/15617541  0.924503
-3  http://www.ncbi.nlm.nih.gov/pubmed/17965226  0.918449
-4  http://www.ncbi.nlm.nih.gov/pubmed/11106284  0.915042
+0  http://www.ncbi.nlm.nih.gov/pubmed/37496148  0.706919
+1  http://www.ncbi.nlm.nih.gov/pubmed/37496148  0.706919
+2    http://www.ncbi.nlm.nih.gov/pubmed/880742  0.678129
+3  http://www.ncbi.nlm.nih.gov/pubmed/26036949  0.671953
+4  http://www.ncbi.nlm.nih.gov/pubmed/12746391  0.667395
 ```

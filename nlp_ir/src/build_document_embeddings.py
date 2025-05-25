@@ -6,7 +6,7 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 
-DOCS_PATH = "data/train/documents.json"
+DOCS_PATH = "data/train/corpus.json"
 OUTPUT_PATH = "nlp_ir/data/sbert_document_embeddings.json"
 
 """
