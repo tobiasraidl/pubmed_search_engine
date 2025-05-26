@@ -41,4 +41,4 @@ def gen_train_triples(negatives_per_positives=3):
 
 
 if __name__ == "__main__":
-    gen_train_triples(3)
+    gen_train_triples(1)

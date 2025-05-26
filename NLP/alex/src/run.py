@@ -5,7 +5,7 @@ from sentence_transformers import SentenceTransformer
 from fine_tune_bi_encoder import fine_tune
 from gen_train_triples import gen_train_triples
 from create_document_embeddings import create_embeddings
-from retriever import BioASQEmbeddingRetriever, FineTunedBertRetriever
+from retriever import BioASQEmbeddingRetriever, BertRetriever
 from evaluate import evaluate_and_store_results
 
 BERT_NAME = "all-MiniLM-L6-v2"
@@ -39,7 +39,7 @@ def get_fine_tuned_bert_model(bert_model) -> SentenceTransformer:
             return load_bert_model(model_path), model_path
         else:
             print("Training triplets do not exist - start generating triplets.")
-            gen_train_triples(negatives_per_positives=3)
+            gen_train_triples(negatives_per_positives=1)
             print("Start fine tuning")
             model_path = fine_tune(model=bert_model, model_name=BERT_NAME, model_path=fine_tuned_model_path)
             print(f"Model Path: {model_path}")
@@ -64,9 +64,9 @@ def main() -> None:
 
     # initilaize retriever
     bio_asq_retriever = BioASQEmbeddingRetriever()
-    bert_retriever = FineTunedBertRetriever(BERT_PATH)
+    bert_retriever = BertRetriever(BERT_PATH)
     fine_tuned_name = BERT_NAME + "-fine-tuned"
-    bert_fine_tuned_retriever = FineTunedBertRetriever(model_path=fine_tuned_model_path, model_name=fine_tuned_name)
+    bert_fine_tuned_retriever = BertRetriever(model_path=fine_tuned_model_path, model_name=fine_tuned_name)
     
     # evaluate performance on test set
     retrievers = {

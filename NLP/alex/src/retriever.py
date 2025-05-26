@@ -73,7 +73,7 @@ class BioASQEmbeddingRetriever:
             results.append({"body": query, "documents": query_documents})
         return results
 
-class FineTunedBertRetriever:
+class BertRetriever:
     def __init__(self, model_path="sentence-transformers/all-MiniLM-L6-v2", model_name="all-MiniLM-L6-v2"):
         device = "mps" if torch.backends.mps.is_available() else "cuda" if torch.cuda.is_available() else "cpu"
         self.model = SentenceTransformer(model_path, device=device)
@@ -150,7 +150,7 @@ if __name__ == "__main__":
     r = retriever.batch_retrieve(["Test", "Hello World", "Alex"], n=10)
     r
 
-    retriever = FineTunedBertRetriever()
+    retriever = BertRetriever()
     result_df = retriever.retrieve("Is Hirschsprung disease a mendelian or a multifactorial disorder?", n=10, return_df=True)
 
     

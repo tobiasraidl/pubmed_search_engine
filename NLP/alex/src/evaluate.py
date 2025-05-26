@@ -1,6 +1,6 @@
 import json
 import os
-from retriever import BioASQEmbeddingRetriever, FineTunedBertRetriever
+from retriever import BioASQEmbeddingRetriever, BertRetriever
 
     
 def compute_metrics(predicted, ground_truth, k=10):
@@ -70,24 +70,24 @@ if __name__ == "__main__":
     # path to labeled test data (ground truth)
     gt_file = "../../../data/test/test_batch3_with_gt.json" #"data/test/test_batch3_with_gt.json"
     os.makedirs("../out/results/", exist_ok=True)
-
+    
     # evaluate BioASQEmbeddingRetriever
     results_bioasq = evaluate_model_performance(gt_file=gt_file, retriever=BioASQEmbeddingRetriever())
     with open("../out/results/bioasq_result.json", "w", encoding="utf-8") as f:
         json.dump(results_bioasq, f, indent=4, ensure_ascii=False)
 
     # evaluate base bert model
-    results_fine_tuned_model = evaluate_model_performance(gt_file=gt_file, retriever=FineTunedBertRetriever())
+    results_fine_tuned_model = evaluate_model_performance(gt_file=gt_file, retriever=BertRetriever())
     with open("../out/results/base_bert_model_result.json", "w", encoding="utf-8") as f:
         json.dump(results_fine_tuned_model, f, indent=4, ensure_ascii=False)
 
-    # evaluate FineTunedBertRetriever
+    # evaluate BertRetriever
     fine_tuned_model_path = "../out/models/all-MiniLM-L6-v2-fine-tuned"
     model_name = "all-MiniLM-L6-v2-fine-tuned"
     results_fine_tuned_model = evaluate_model_performance(
         gt_file=gt_file, 
-        retriever=FineTunedBertRetriever(model_path=fine_tuned_model_path, model_name=model_name))
+        retriever=BertRetriever(model_path=fine_tuned_model_path, model_name=model_name))
     with open("../out/results/fine_tuned_model_result.json", "w", encoding="utf-8") as f:
         json.dump(results_fine_tuned_model, f, indent=4, ensure_ascii=False)
-
+    
     
