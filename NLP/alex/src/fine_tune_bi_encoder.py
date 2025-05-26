@@ -84,7 +84,7 @@ def fine_tune(model, model_name, model_dir="../out/models", model_path=None) -> 
         train_objectives=[(train_dataloader, train_loss)],
         epochs=epochs,
         warmup_steps=warmup_steps,
-        optimizer_params={'lr': 2e-5},
+        optimizer_params={'lr': 2e-5, 'eps': 1e-6, 'correct_bias': False},
         evaluator=evaluator,
         evaluation_steps=evaluation_steps,
         output_path=f"{model_dir}/{model_name}-fine-tuned",
