@@ -32,15 +32,16 @@ CONFIG = {
     "output_dir": "../out",
     "models_dir": "../out/models",
     "triples_path": "../out/triples.jsonl",
-    "negatives_per_positives": 1
+    "negatives_per_positives": 1,
+    "manual_fine_tuned_path": "../out/models/all-MiniLM-L6-v2-fine-tuned-final"
 }
 
 # Model selection configuration
 # Set to True to include the model in the pipeline, False to exclude it
 MODEL_SELECTION = {
     "bioasq": True,              # BioASQ embedding model
-    "bert": False,                # Base BERT model
-    "fine_tuned_bert": False      # Fine-tuned BERT model
+    "bert": True,                # Base BERT model
+    "fine_tuned_bert": True      # Fine-tuned BERT model
 }
 
 
