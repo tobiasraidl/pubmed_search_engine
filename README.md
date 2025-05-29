@@ -1,4 +1,7 @@
-# s25_air
+# BioASQ Task 13-b Phase A
+
+https://www.bioasq.org/
+
 Contribution Chart
 1. Preprocessing & Data Loading: Tobias, Alex G.
 2. a traditional IR model (from the crash course): Tobias, Alex G.
