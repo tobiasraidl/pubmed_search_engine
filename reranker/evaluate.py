@@ -107,9 +107,8 @@ if __name__ == "__main__":
     bm25_results = evaluate_bm25(gt_file)
     print(bm25_results)
     
-    finetuned_reranker_results = evaluate_reranker(gt_file, "reranker/out/models/model_1", k=10, preranker_n=100)
-    print(finetuned_reranker_results)
+    base_reranker_results = evaluate_reranker(gt_file, k=10, preranker_n=500)
+    print(base_reranker_results)
     
-    # questions_file = "data/test/test_batch4.json"
-    # export_reranker_predictions(questions_file, "reranker/out/predictions/pretrained_reranker_prerank100_pred.json", k=10, preranker_n=100)
-    # export_bm25_predictions(questions_file, "reranker/out/predictions/bm25_pred.json", k=10) 
+    # finetuned_reranker_results = evaluate_reranker(gt_file, "reranker/out/models/model_1", k=10, preranker_n=500)
+    # print(finetuned_reranker_results)
