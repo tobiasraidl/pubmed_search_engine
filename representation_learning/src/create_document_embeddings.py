@@ -15,7 +15,7 @@ from bioasq_embedding_model import BioASQEmbeddingModel
 from sentence_transformers import SentenceTransformer
 
 
-PATH_TO_CORPUS = "../../../data/train/corpus.json"
+PATH_TO_CORPUS = "../../data/train/corpus.json"
 
 
 with open(PATH_TO_CORPUS, "r") as file:

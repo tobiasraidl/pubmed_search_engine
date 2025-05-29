@@ -55,7 +55,7 @@ def evaluate_model_performance(gt_file, retriever, k=10):
 
 def evaluate_and_store_results(retrievers):
     # path to labeled test data (ground truth)
-    gt_file = "../../../data/test/test_batch3_with_gt.json" #"data/test/test_batch3_with_gt.json"
+    gt_file = "../../data/test/test_batch3_with_gt.json" #"data/test/test_batch3_with_gt.json"
     os.makedirs("../out/results/", exist_ok=True)
 
     #
