@@ -1,20 +1,14 @@
 # Instructions
 
-- 1. Download pre-trained BioASQ embeddings here http://participants-area.bioasq.org/tools/BioASQword2vec/ 
+- 1. Install dependencies
+
+- 2. Download pre-trained BioASQ embeddings here http://participants-area.bioasq.org/tools/BioASQword2vec/ 
     - unpack zip and move types.txt and vectors.txt to data folder 
-
-## Running BioASQEmbeddingModel
-- Download pre-trained BioASQ embeddings here http://participants-area.bioasq.org/tools/BioASQword2vec/ 
-- Move types.txt and vectors.txt to data folder
-- The vector embeddings are stored separately (types.txt, vectors.txt), where the first word in types.txt corresponds to the first line in vectors.txt
-- Execute create_document_embeddings.py, which maps the embeddings from BioASQ embeddings to each word of the corpus of a document (title + abstract), and computes the document embedding, and stores them
-- Run evaluate.py
-
-## Fining tuning a Bert model
-- run fine_tune_bi_encoder.py to load, fine-tune, and locally the store the Bert model
-- note: This is step has been done on jupyter cluster
-- Execute create_document_embeddings.py, to precompute embeddings of the documents using the fine-tuned Bert model
-- run evaluate
-
-# Todo:
-- Evaluate Performance of VectorModel, Bert model, fine-tune Bert model
+    - (first word in types.txt corresponds to the first line in vectors.)
+    
+- 3. Run main.py which handles the whole pipeline:
+    1. Loading and initializing models
+    2. Fine-tuning models if needed
+    3. Creating document embeddings
+    4. Initializing retrievers
+    5. Evaluating retriever performance
