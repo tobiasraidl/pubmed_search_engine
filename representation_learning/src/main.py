@@ -39,8 +39,8 @@ CONFIG = {
 # Model selection configuration
 # Set to True to include the model in the pipeline, False to exclude it
 MODEL_SELECTION = {
-    "bioasq": True,              # BioASQ embedding model
-    "bert": True,                # Base BERT model
+    "bioasq": False,              # BioASQ embedding model
+    "bert": False,                # Base BERT model
     "fine_tuned_bert": True      # Fine-tuned BERT model
 }
 

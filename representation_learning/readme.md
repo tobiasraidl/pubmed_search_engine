@@ -1,5 +1,8 @@
 # Instructions
 
+- 1. Download pre-trained BioASQ embeddings here http://participants-area.bioasq.org/tools/BioASQword2vec/ 
+    - unpack zip and move types.txt and vectors.txt to data folder 
+
 ## Running BioASQEmbeddingModel
 - Download pre-trained BioASQ embeddings here http://participants-area.bioasq.org/tools/BioASQword2vec/ 
 - Move types.txt and vectors.txt to data folder
