@@ -189,8 +189,6 @@ reranker/out/triples.jsonl
 
 # DS_Store: macOS specific file that stores custom attributes of a folder
 .DS_Store
-nlp_ir/data/*
-nlp_ir/model/*
-nlp_ir/checkpoints/*
-checkpoints
-sbert_model
+representation_learning_BioBert/data/*
+representation_learning_BioBert/model/*
+representation_learning_BioBert/checkpoints/*
